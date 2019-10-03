@@ -1,0 +1,105 @@
+Log file created on Tue Oct 01 16:55:50 CDT 2019
+IMPORTANT:
+Because updating this file after every log message would kill
+performance, it will be *incomplete* unless you invoke the
+Utilities->Troubleshooting->Update Activity Log on Disk command!
+4:55:50 PM [main] [message] Log: When reporting bugs, please include the following information:
+4:55:50 PM [main] [message] Log: java.version=1.8.0_221
+4:55:50 PM [main] [message] Log: java.vm.version=25.221-b11
+4:55:50 PM [main] [message] Log: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+4:55:50 PM [main] [message] Log: java.runtime.version=1.8.0_221-b11
+4:55:50 PM [main] [message] Log: java.runtime.name=Java(TM) SE Runtime Environment
+4:55:50 PM [main] [message] Log: java.vendor=Oracle Corporation
+4:55:50 PM [main] [message] Log: java.compiler=null
+4:55:50 PM [main] [message] Log: os.name=Windows 10
+4:55:50 PM [main] [message] Log: os.version=10.0
+4:55:50 PM [main] [message] Log: os.arch=amd64
+4:55:50 PM [main] [message] Log: user.home=C:\Users\MANOJ
+4:55:50 PM [main] [message] Log: java.home=C:\Program Files\Java\jdk1.8.0_221\jre
+4:55:50 PM [main] [message] Log: java.class.path=C:\Users\MANOJ\Desktop\Github Files\jEdit\build\jedit.jar
+4:55:50 PM [main] [message] jEdit: starting with command line arguments: -settings=C:\Users\MANOJ\Desktop\Github Files\jEdit\build/settings
+4:55:50 PM [main] [debug] jEdit: before splash screen activation:35 ms
+4:55:50 PM [main] [debug] jEdit: after splash screen activation:207 ms
+4:55:50 PM [main] [debug] MiscUtilities: Saving backup of file "C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\activity.log" to "C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\settings-backup\activity.log~1~"
+4:55:50 PM [main] [notice] jEdit: jEdit version 5.5.0
+4:55:50 PM [main] [message] jEdit: Settings directory is C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings
+4:55:50 PM [main] [message] jEdit: jEdit home directory is C:\Users\MANOJ\Desktop\Github Files\jEdit\build
+4:55:50 PM [main] [debug] SplashScreen: init:10/114ms
+4:55:50 PM [main] [debug] SplashScreen: init system properties:13/127ms
+4:55:50 PM [main] [message] BeanShell: Beanshell Init
+4:55:50 PM [main] [debug] SplashScreen: init beanshell:22/149ms
+4:55:50 PM [main] [debug] SplashScreen: loading site properties:4/153ms
+4:55:50 PM [main] [debug] SplashScreen: loading user properties:2/155ms
+4:55:50 PM [main] [debug] GUIUtilities: Icon theme set to: tango
+4:55:50 PM [main] [debug] GUIUtilities: Loading icon theme from: jeditresource:/org/gjt/sp/jedit/icons/themes/tango/
+4:55:50 PM [main] [debug] SplashScreen: init GUI:2/157ms
+4:55:50 PM [main] [debug] EditServer: jEdit server started on port 58087
+4:55:50 PM [main] [debug] EditServer: Authorization key is 281465403
+4:55:50 PM [main] [debug] SplashScreen: init server:4/161ms
+4:55:50 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
+4:55:50 PM [main] [debug] SplashScreen: init look and feel:2/163ms
+4:55:50 PM [main] [debug] SplashScreen: init VFS Manager:1/164ms
+4:55:50 PM [main] [debug] ActionSet: Loading actions from jar:file:/C:/Users/MANOJ/Desktop/Github%20Files/jEdit/build/jedit.jar!/org/gjt/sp/jedit/actions.xml
+4:55:50 PM [main] [debug] DockableWindowManager: Loading dockables from jar:file:/C:/Users/MANOJ/Desktop/Github%20Files/jEdit/build/jedit.jar!/org/gjt/sp/jedit/dockables.xml
+4:55:50 PM [main] [debug] SplashScreen: init resources:60/224ms
+4:55:50 PM [AWT-EventQueue-0] [debug] EditBus: SearchSettingsChanged[source=null]
+4:55:50 PM [main] [debug] SplashScreen: Migrate keymaps:28/252ms
+4:55:50 PM [main] [notice] jEdit: Loading plugins from C:\Users\MANOJ\Desktop\Github Files\jEdit\build\jars
+4:55:50 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=5.0,source=C:\Users\MANOJ\Desktop\Github Files\jEdit\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
+4:55:50 PM [main] [notice] jEdit: Loading plugins from C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\jars
+4:55:50 PM [main] [debug] SplashScreen: init plugins:8/260ms
+4:55:50 PM [main] [debug] SplashScreen: init history model:2/262ms
+4:55:50 PM [main] [message] BufferHistory: Loading C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\recent.xml
+4:55:50 PM [main] [debug] SplashScreen: init buffer history:3/265ms
+4:55:50 PM [main] [message] KillRing: Loading C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\killring.xml
+4:55:50 PM [main] [debug] SplashScreen: init killring:8/273ms
+4:55:50 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
+4:55:50 PM [main] [debug] jEdit: SOCKS proxy disabled
+4:55:50 PM [main] [debug] jEdit: HTTP proxy disabled
+4:55:50 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+4:55:50 PM [main] [debug] SplashScreen: init various properties:44/317ms
+4:55:50 PM [main] [message] jEdit: Loading mode catalog file C:\Users\MANOJ\Desktop\Github Files\jEdit\build\modes\catalog
+4:55:50 PM [main] [message] jEdit: Loading mode catalog file C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\modes\catalog
+4:55:50 PM [main] [debug] SplashScreen: init modes:32/349ms
+4:55:50 PM [main] [debug] SplashScreen: activate plugins:3/352ms
+4:55:50 PM [main] [debug] Macros: Registered beanshell macro handler
+4:55:50 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=macros,source=null]
+4:55:50 PM [main] [debug] SplashScreen: init macros:13/365ms
+4:55:50 PM [main] [message] BeanShell: Running script C:\Users\MANOJ\Desktop\Github Files\jEdit\build\startup\startup.bsh
+4:55:50 PM [main] [notice] jEdit$5: Loading edit mode C:\Users\MANOJ\Desktop\Github Files\jEdit\build\modes\text.xml
+4:55:50 PM [main] [debug] String: BeanShell interpreter version 2.0b4-jedit
+4:55:50 PM [main] [debug] SplashScreen: run startup scripts:74/439ms
+4:55:50 PM [main] [debug] SplashScreen: run startup scripts:1/440ms
+4:55:50 PM [main] [debug] SplashScreen: run startup scripts:2/441ms
+4:55:50 PM [main] [debug] jEdit: main done:558 ms
+4:55:50 PM [AWT-EventQueue-0] [message] PerspectiveManager: Loading C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\perspective.xml
+4:55:50 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\)]
+4:55:50 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\)]
+4:55:50 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\)]
+4:55:50 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\)]
+4:55:51 PM [AWT-EventQueue-0] [debug] BufferSet: 1115789792: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+4:55:51 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+4:55:51 PM [AWT-EventQueue-0] [debug] BufferSet: 1115789792 addBufferAt(Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\),-1)
+4:55:51 PM [AWT-EventQueue-0] [debug] BufferSet: 1115789792: Buffer added Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\) at 0
+4:55:51 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+4:55:51 PM [AWT-EventQueue-0] [debug] BufferSet: 1115789792 addBufferAt(Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\),0)
+4:55:51 PM [AWT-EventQueue-0] [debug] BufferSet: 1115789792 addBufferAt(Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\),1)
+4:55:51 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CREATED,source=org.gjt.sp.jedit.View[active]]
+4:55:51 PM [AWT-EventQueue-0] [debug] EditBus: EditorStarted[source=null]
+4:55:51 PM [AWT-EventQueue-0] [message] jEdit: Startup complete: 902 ms
+4:55:51 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+4:55:51 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+4:56:00 PM [AWT-EventQueue-0] [debug] EditBus: EditorExitRequested[source=org.gjt.sp.jedit.View[active]]
+4:56:00 PM [AWT-EventQueue-0] [message] PerspectiveManager: Saving C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\perspective.xml
+4:56:00 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\perspective.xml" to "C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\settings-backup\perspective.xml~1~"
+4:56:00 PM [AWT-EventQueue-0] [debug] EditBus: EditorExiting[source=null]
+4:56:00 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CLOSED,source=org.gjt.sp.jedit.View[active]]
+4:56:00 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[active]]
+4:56:00 PM [AWT-EventQueue-0] [debug] BufferSet: 1115789792: Buffer removed Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\)
+4:56:00 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\) is in no bufferSet anymore, closing it
+4:56:00 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=5.0,source=C:\Users\MANOJ\Desktop\Github Files\jEdit\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
+4:56:00 PM [AWT-EventQueue-0] [message] BufferHistory: Saving C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\recent.xml
+4:56:00 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\recent.xml" to "C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\settings-backup\recent.xml~1~"
+4:56:00 PM [AWT-EventQueue-0] [message] KillRing: Saving C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\killring.xml
+4:56:00 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\killring.xml" to "C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\settings-backup\killring.xml~1~"
+4:56:00 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\properties" to "C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\settings-backup\properties~1~"

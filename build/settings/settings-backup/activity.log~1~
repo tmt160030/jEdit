@@ -1,0 +1,169 @@
+Log file created on Tue Oct 01 16:36:25 CDT 2019
+IMPORTANT:
+Because updating this file after every log message would kill
+performance, it will be *incomplete* unless you invoke the
+Utilities->Troubleshooting->Update Activity Log on Disk command!
+4:36:25 PM [main] [message] Log: When reporting bugs, please include the following information:
+4:36:25 PM [main] [message] Log: java.version=1.8.0_221
+4:36:25 PM [main] [message] Log: java.vm.version=25.221-b11
+4:36:25 PM [main] [message] Log: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+4:36:25 PM [main] [message] Log: java.runtime.version=1.8.0_221-b11
+4:36:25 PM [main] [message] Log: java.runtime.name=Java(TM) SE Runtime Environment
+4:36:25 PM [main] [message] Log: java.vendor=Oracle Corporation
+4:36:25 PM [main] [message] Log: java.compiler=null
+4:36:25 PM [main] [message] Log: os.name=Windows 10
+4:36:25 PM [main] [message] Log: os.version=10.0
+4:36:25 PM [main] [message] Log: os.arch=amd64
+4:36:25 PM [main] [message] Log: user.home=C:\Users\MANOJ
+4:36:25 PM [main] [message] Log: java.home=C:\Program Files\Java\jdk1.8.0_221\jre
+4:36:25 PM [main] [message] Log: java.class.path=C:\Users\MANOJ\Desktop\Github Files\jEdit\build\jedit.jar
+4:36:25 PM [main] [message] jEdit: starting with command line arguments: -settings=C:\Users\MANOJ\Desktop\Github Files\jEdit\build/settings
+4:36:25 PM [main] [debug] jEdit: before splash screen activation:46 ms
+4:36:25 PM [main] [debug] jEdit: after splash screen activation:244 ms
+4:36:25 PM [main] [notice] jEdit: jEdit version 5.5.0
+4:36:25 PM [main] [message] jEdit: Settings directory is C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings
+4:36:25 PM [main] [message] jEdit: jEdit home directory is C:\Users\MANOJ\Desktop\Github Files\jEdit\build
+4:36:25 PM [main] [debug] SplashScreen: init:12/139ms
+4:36:25 PM [main] [debug] SplashScreen: init system properties:14/153ms
+4:36:25 PM [main] [message] BeanShell: Beanshell Init
+4:36:25 PM [main] [debug] SplashScreen: init beanshell:24/177ms
+4:36:25 PM [main] [debug] SplashScreen: loading site properties:4/181ms
+4:36:25 PM [main] [debug] SplashScreen: loading user properties:1/182ms
+4:36:25 PM [main] [debug] GUIUtilities: Icon theme set to: tango
+4:36:25 PM [main] [debug] GUIUtilities: Loading icon theme from: jeditresource:/org/gjt/sp/jedit/icons/themes/tango/
+4:36:25 PM [main] [debug] SplashScreen: init GUI:2/184ms
+4:36:25 PM [main] [debug] EditServer: jEdit server started on port 58044
+4:36:25 PM [main] [debug] EditServer: Authorization key is 523266112
+4:36:25 PM [main] [debug] SplashScreen: init server:4/188ms
+4:36:25 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
+4:36:25 PM [main] [debug] SplashScreen: init look and feel:2/190ms
+4:36:25 PM [main] [debug] SplashScreen: init VFS Manager:1/191ms
+4:36:25 PM [main] [debug] ActionSet: Loading actions from jar:file:/C:/Users/MANOJ/Desktop/Github%20Files/jEdit/build/jedit.jar!/org/gjt/sp/jedit/actions.xml
+4:36:25 PM [main] [debug] DockableWindowManager: Loading dockables from jar:file:/C:/Users/MANOJ/Desktop/Github%20Files/jEdit/build/jedit.jar!/org/gjt/sp/jedit/dockables.xml
+4:36:25 PM [main] [debug] SplashScreen: init resources:64/255ms
+4:36:25 PM [main] [debug] KeymapManagerImpl: copyKeymap(jEdit,imported)
+4:36:25 PM [main] [debug] KeymapManagerImpl: Copying C:\Users\MANOJ\Desktop\Github Files\jEdit\build\keymaps\jEdit_keys.props to C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\keymaps\imported_keys.props
+4:36:25 PM [AWT-EventQueue-0] [debug] EditBus: SearchSettingsChanged[source=null]
+4:36:25 PM [main] [debug] SplashScreen: Migrate keymaps:35/290ms
+4:36:25 PM [main] [notice] jEdit: Loading plugins from C:\Users\MANOJ\Desktop\Github Files\jEdit\build\jars
+4:36:25 PM [main] [debug] PluginJAR: Opening C:\Users\MANOJ\Desktop\Github Files\jEdit\build\jars\QuickNotepad.jar
+4:36:25 PM [main] [debug] ActionSet: Loading actions from jeditresource:/QuickNotepad.jar!/actions.xml
+4:36:25 PM [main] [debug] DockableWindowManager: Loading dockables from jeditresource:/QuickNotepad.jar!/dockables.xml
+4:36:25 PM [main] [debug] PluginJAR: Writing C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\jars-cache\QuickNotepad.jar.summary
+4:36:25 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=LOADED,exit=false,version=5.0,source=C:\Users\MANOJ\Desktop\Github Files\jEdit\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
+4:36:25 PM [main] [notice] jEdit: Loading plugins from C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\jars
+4:36:25 PM [main] [debug] SplashScreen: init plugins:20/310ms
+4:36:25 PM [main] [debug] SplashScreen: init history model:2/312ms
+4:36:25 PM [main] [debug] SplashScreen: init buffer history:1/313ms
+4:36:25 PM [main] [debug] SplashScreen: init killring:2/315ms
+4:36:25 PM [main] [message] CheckFileStatus: Performing migration step: checkFileStatus
+4:36:25 PM [main] [debug] jEdit: initPLAF non-edt old=javax.swing.plaf.metal.MetalLookAndFeel requested=null new=javax.swing.plaf.metal.MetalLookAndFeel
+4:36:25 PM [main] [debug] jEdit: SOCKS proxy disabled
+4:36:25 PM [main] [debug] jEdit: HTTP proxy disabled
+4:36:26 PM [AWT-EventQueue-0] [debug] EditBus: PropertiesChanged[source=null]
+4:36:26 PM [main] [debug] SplashScreen: init various properties:50/365ms
+4:36:26 PM [main] [message] jEdit: Loading mode catalog file C:\Users\MANOJ\Desktop\Github Files\jEdit\build\modes\catalog
+4:36:26 PM [main] [message] jEdit: Loading mode catalog file C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\modes\catalog
+4:36:26 PM [main] [debug] SplashScreen: init modes:38/403ms
+4:36:26 PM [main] [debug] SplashScreen: activate plugins:2/405ms
+4:36:26 PM [main] [debug] Macros: Registered beanshell macro handler
+4:36:26 PM [AWT-EventQueue-0] [debug] EditBus: DynamicMenuChanged[menu=macros,source=null]
+4:36:26 PM [main] [debug] SplashScreen: init macros:14/419ms
+4:36:26 PM [main] [message] BeanShell: Running script C:\Users\MANOJ\Desktop\Github Files\jEdit\build\startup\startup.bsh
+4:36:26 PM [main] [notice] jEdit$5: Loading edit mode C:\Users\MANOJ\Desktop\Github Files\jEdit\build\modes\text.xml
+4:36:26 PM [main] [debug] String: BeanShell interpreter version 2.0b4-jedit
+4:36:26 PM [main] [debug] SplashScreen: run startup scripts:74/493ms
+4:36:26 PM [main] [debug] SplashScreen: run startup scripts:75/494ms
+4:36:26 PM [main] [debug] SplashScreen: run startup scripts:76/495ms
+4:36:26 PM [main] [debug] jEdit: main done:626 ms
+4:36:26 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=PROPERTIES_CHANGED,view=null,source=Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\)]
+4:36:26 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=CREATED,view=null,source=Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\)]
+4:36:26 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOAD_STARTED,view=null,source=Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\)]
+4:36:26 PM [AWT-EventQueue-0] [debug] EditBus: BufferUpdate[what=LOADED,view=null,source=Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\)]
+4:36:26 PM [AWT-EventQueue-0] [debug] BufferSet: 126414918: addBufferSetListener org.gjt.sp.jedit.EditPane[inactive]
+4:36:26 PM [AWT-EventQueue-0] [debug] EditBus: BufferChanging[what=BUFFER_CHANGING,source=org.gjt.sp.jedit.EditPane[inactive]]
+4:36:26 PM [AWT-EventQueue-0] [debug] BufferSet: 126414918 addBufferAt(Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\),-1)
+4:36:26 PM [AWT-EventQueue-0] [debug] BufferSet: 126414918: Buffer added Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\) at 0
+4:36:26 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=CREATED,source=org.gjt.sp.jedit.EditPane[inactive]]
+4:36:26 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CREATED,source=org.gjt.sp.jedit.View[active]]
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader: java.io.FileNotFoundException: C:\Users\MANOJ\Desktop\Github Files\jEdit\build\doc\whatsnew\toc.xml (The system cannot find the path specified)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.io.FileInputStream.open0(Native Method)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.io.FileInputStream.open(FileInputStream.java:195)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.io.FileInputStream.<init>(FileInputStream.java:138)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.io.FileInputStream.<init>(FileInputStream.java:93)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.net.URL.openStream(URL.java:1057)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.jedit.help.HelpTOCLoader.loadTOC(HelpTOCLoader.java:166)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.jedit.help.HelpTOCLoader.createTOC(HelpTOCLoader.java:117)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.jedit.help.HelpTOCPanel$2.run(HelpTOCPanel.java:105)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.util.TaskManager$MyTask._run(TaskManager.java:258)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.util.Task.run(Task.java:65)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.lang.Thread.run(Thread.java:748)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader: java.io.FileNotFoundException: C:\Users\MANOJ\Desktop\Github Files\jEdit\build\doc\users-guide\toc.xml (The system cannot find the path specified)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.io.FileInputStream.open0(Native Method)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.io.FileInputStream.open(FileInputStream.java:195)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.io.FileInputStream.<init>(FileInputStream.java:138)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.io.FileInputStream.<init>(FileInputStream.java:93)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.net.URL.openStream(URL.java:1057)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.jedit.help.HelpTOCLoader.loadTOC(HelpTOCLoader.java:166)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.jedit.help.HelpTOCLoader.createTOC(HelpTOCLoader.java:118)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.jedit.help.HelpTOCPanel$2.run(HelpTOCPanel.java:105)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.util.TaskManager$MyTask._run(TaskManager.java:258)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.util.Task.run(Task.java:65)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.lang.Thread.run(Thread.java:748)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader: java.io.FileNotFoundException: C:\Users\MANOJ\Desktop\Github Files\jEdit\build\doc\FAQ\toc.xml (The system cannot find the path specified)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.io.FileInputStream.open0(Native Method)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.io.FileInputStream.open(FileInputStream.java:195)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.io.FileInputStream.<init>(FileInputStream.java:138)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.io.FileInputStream.<init>(FileInputStream.java:93)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.net.URL.openStream(URL.java:1057)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.jedit.help.HelpTOCLoader.loadTOC(HelpTOCLoader.java:166)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.jedit.help.HelpTOCLoader.createTOC(HelpTOCLoader.java:119)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.jedit.help.HelpTOCPanel$2.run(HelpTOCPanel.java:105)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.util.TaskManager$MyTask._run(TaskManager.java:258)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at org.gjt.sp.util.Task.run(Task.java:65)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+4:36:26 PM [jEdit Worker #0] [error] HelpTOCLoader:  at java.lang.Thread.run(Thread.java:748)
+4:36:26 PM [jEdit Worker #0] [notice] HelpTOCLoader: The API docs for jEdit will not be available (reinstall jEdit if you want them)
+4:36:26 PM [AWT-EventQueue-0] [debug] EditBus: EditorStarted[source=null]
+4:36:26 PM [AWT-EventQueue-0] [message] jEdit: Startup complete: 1026 ms
+4:36:26 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=VIEW_ACTIVATED,source=org.gjt.sp.jedit.View[active]]
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2: java.io.FileNotFoundException: C:\Users\MANOJ\Desktop\Github Files\jEdit\build\doc\welcome.html (The system cannot find the path specified)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at java.io.FileInputStream.open0(Native Method)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at java.io.FileInputStream.open(FileInputStream.java:195)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at java.io.FileInputStream.<init>(FileInputStream.java:138)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at java.io.FileInputStream.<init>(FileInputStream.java:93)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at javax.swing.JEditorPane.getStream(JEditorPane.java:768)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at javax.swing.JEditorPane.setPage(JEditorPane.java:432)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at org.gjt.sp.jedit.help.HelpViewer$2.doInBackground(HelpViewer.java:327)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at org.gjt.sp.jedit.help.HelpViewer$2.doInBackground(HelpViewer.java:300)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at javax.swing.SwingWorker$1.call(SwingWorker.java:295)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at javax.swing.SwingWorker.run(SwingWorker.java:334)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+4:36:26 PM [SwingWorker-pool-1-thread-1] [error] HelpViewer$2:  at java.lang.Thread.run(Thread.java:748)
+4:36:26 PM [AWT-EventQueue-0] [debug] JEditTextArea: InputMethodSupport is activated
+4:54:04 PM [AWT-EventQueue-0] [debug] EditBus: EditorExitRequested[source=org.gjt.sp.jedit.View[active]]
+4:54:04 PM [AWT-EventQueue-0] [message] PerspectiveManager: Saving C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\perspective.xml
+4:54:04 PM [AWT-EventQueue-0] [debug] MiscUtilities: Saving backup of file "C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\perspective.xml" to "C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\settings-backup\perspective.xml~1~"
+4:54:04 PM [AWT-EventQueue-0] [debug] EditBus: EditorExiting[source=null]
+4:54:04 PM [AWT-EventQueue-0] [debug] EditBus: ViewUpdate[what=CLOSED,source=org.gjt.sp.jedit.View[active]]
+4:54:05 PM [AWT-EventQueue-0] [debug] EditBus: EditPaneUpdate[what=DESTROYED,source=org.gjt.sp.jedit.EditPane[active]]
+4:54:05 PM [AWT-EventQueue-0] [debug] BufferSet: 126414918: Buffer removed Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\)
+4:54:05 PM [AWT-EventQueue-0] [debug] BufferSetManager: Buffer:Untitled-1 (%USERPROFILE%\Desktop\Github Files\jEdit\) is in no bufferSet anymore, closing it
+4:54:05 PM [AWT-EventQueue-0] [debug] EditBus: PluginUpdate[what=UNLOADED,exit=true,version=5.0,source=C:\Users\MANOJ\Desktop\Github Files\jEdit\build\jars\QuickNotepad.jar,class=QuickNotepadPlugin]
+4:54:05 PM [AWT-EventQueue-0] [message] BufferHistory: Saving C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\recent.xml
+4:54:05 PM [AWT-EventQueue-0] [message] KillRing: Saving C:\Users\MANOJ\Desktop\Github Files\jEdit\build\settings\killring.xml
