@@ -370,6 +370,24 @@ public class StatusBar extends JPanel
 				return;
 
 			int bufferLength = buffer.getLength();
+			
+			//This is the block of code I changed
+			String s=buffer.getText();
+			int wordLength,wordPosition;
+			if(s.equals("")) {
+				wordLength=0;
+			}
+			else {
+				wordLength=(s.split("\\s+")).length;
+			}
+			s=buffer.getText(start,dot);
+			if(s.equals("")) {
+				wordPosition=0;
+			}
+			else {
+				wordPosition=(s.split("\\s+")).length;
+			}
+			//End change here, continued on line 426 
 
 			buffer.getText(start,dot,seg);
 			int virtualPosition = StandardUtilities.getVirtualWidth(seg,
@@ -405,18 +423,39 @@ public class StatusBar extends JPanel
 				buf.append('/');
 				buf.append(bufferLength);
 				buf.append(')');
+				//change
+				buf.append('(');
+				buf.append(wordPosition);
+				buf.append('/');
+				buf.append(wordLength);
+				buf.append(')');
+				//change
 			}
 			else if (jEdit.getBooleanProperty("view.status.show-caret-offset", true))
 			{
 				buf.append('(');
 				buf.append(caretPosition);
 				buf.append(')');
+				//change
+				buf.append('(');
+				buf.append(wordPosition);
+				buf.append('/');
+				buf.append(wordLength);
+				buf.append(')');
+				//change
 			}
 			else if (jEdit.getBooleanProperty("view.status.show-caret-bufferlength", true))
 			{
 				buf.append('(');
 				buf.append(bufferLength);
 				buf.append(')');
+				//change
+				buf.append('(');
+				buf.append(wordPosition);
+				buf.append('/');
+				buf.append(wordLength);
+				buf.append(')');
+				//change
 			}
 
 			caretStatus.setText(buf.toString());
