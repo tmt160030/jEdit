@@ -1962,17 +1962,6 @@ forward_scan:	do
 	} //}}}
 
 	//{{{ getSelectedText() methods
-	/**
-	 * Returns the text in the specified selection.
-	 * @param s The selection
-	 * @since jEdit 3.2pre1
-	 */
-	public String getSelectedText(Selection s)
-	{
-		StringBuilder buf = new StringBuilder(s.end - s.start);
-		s.getText(buffer,buf);
-		return buf.toString();
-	}
 
 	/**
 	 * Returns the text in all active selections.
@@ -4242,7 +4231,7 @@ loop:		for(int i = lineNo - 1; i >= 0; i--)
 
 			for (Selection s : selection)
 			{
-				setSelectedText(s, TextUtilities.format(getSelectedText(s), maxLineLen,
+				setSelectedText(s, TextUtilities.format(s.getSelectedText(buffer), maxLineLen,
 									buffer.getTabSize()));
 			}
 
@@ -4327,7 +4316,7 @@ loop:		for(int i = lineNo - 1; i >= 0; i--)
 			for (Selection s : selection)
 			{
 				setSelectedText(s, TextUtilities.spacesToTabs(
-					getSelectedText(s), buffer.getTabSize()));
+					s.getSelectedText(buffer), buffer.getTabSize()));
 			}
 		}
 
@@ -4361,7 +4350,7 @@ loop:		for(int i = lineNo - 1; i >= 0; i--)
 			for (Selection s : selection)
 			{
 				setSelectedText(s, TextUtilities.tabsToSpaces(
-					getSelectedText(s), buffer.getTabSize()));
+					s.getSelectedText(buffer), buffer.getTabSize()));
 			}
 		}
 
@@ -4400,7 +4389,7 @@ loop:		for(int i = lineNo - 1; i >= 0; i--)
 		buffer.beginCompoundEdit();
 
 		for (Selection s : selection)
-			setSelectedText(s, getSelectedText(s).toUpperCase());
+			setSelectedText(s, s.getSelectedText(buffer).toUpperCase());
 
 		buffer.endCompoundEdit();
 		if (caret != -1)
@@ -4439,7 +4428,7 @@ loop:		for(int i = lineNo - 1; i >= 0; i--)
 		buffer.beginCompoundEdit();
 
 		for (Selection s : selection)
-			setSelectedText(s, getSelectedText(s).toLowerCase());
+			setSelectedText(s, s.getSelectedText(buffer).toLowerCase());
 
 		buffer.endCompoundEdit();
 		if (caret != -1)
