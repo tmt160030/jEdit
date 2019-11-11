@@ -2753,6 +2753,116 @@ loop:		for(int i = 0; i < seg.count; i++)
 		}
 	} //}}}
 
+	/**
+	 * Add an explicit fold.
+	 * You should call this method inside a compoundEdit in the buffer.
+	 * You must also check if the buffer fold mode is explicit before
+	 * calling this method.
+	 *
+	 * @param caretStart the starting offset
+	 * @param caretEnd   the end offset
+	 * @param lineStart  the start line
+	 * @param lineEnd    the end line
+	 * @since jEdit 4.3pre3
+	 */
+	public int addExplicitFold(int caretStart, int caretEnd, int lineStart, int lineEnd)
+	{
+		// need to "fix" the caret position so that we get the right rule.
+		// taking the start offset one char ahead and the end offset one char
+		// behing makes sure we get the right rule for the text being
+		// wrapped (tricky around mode boundaries, e.g., php code embedded
+		// in HTML code)
+		int startCaret = caretStart < getLength() ? caretStart + 1 : caretStart;
+		int endCaret = caretEnd > 0 ? caretEnd - 1 : caretEnd;
+
+		String startLineComment = getContextSensitiveProperty(startCaret,"lineComment");
+		String startCommentStart = getContextSensitiveProperty(startCaret,"commentStart");
+		String startCommentEnd = getContextSensitiveProperty(startCaret,"commentEnd");
+		String endLineComment = getContextSensitiveProperty(endCaret,"lineComment");
+		String endCommentStart = getContextSensitiveProperty(endCaret,"commentStart");
+		String endCommentEnd = getContextSensitiveProperty(endCaret,"commentEnd");
+
+		String start;
+		int caretBack = 1;
+		if(startLineComment != null)
+			start = startLineComment + "{{{ ";
+		else if(startCommentStart != null && startCommentEnd != null)
+		{
+			start = startCommentStart + "{{{  " + startCommentEnd;
+			caretBack = 2 + startCommentEnd.length();
+		}
+		else
+			start = "{{{ ";
+
+		if (startLineComment != null)
+		{
+			// add a new line if there's text after the comment
+			// we're inserting
+			if (getLineLength(lineStart) != caretStart)
+			{
+				start += '\n';
+			}
+		}
+		else
+		{
+			// always insert a new line if there's no comment character.
+			start += "\n";
+		}
+
+		String end;
+		if(endLineComment != null)
+			end = endLineComment + "}}}";
+		else if(endCommentStart != null && endCommentEnd != null)
+			end = endCommentStart + "}}}" + endCommentEnd;
+		else
+			end = "}}}";
+
+		String line = getLineText(lineStart);
+		String whitespace = line.substring(0,
+			StandardUtilities.getLeadingWhiteSpace(line));
+		caretBack += whitespace.length();
+		if (caretStart == caretEnd)
+		{
+			caretBack += end.length() + 1;
+			int lineStartOffset = getLineStartOffset(lineStart);
+			if (lineStartOffset  + whitespace.length() != caretStart)
+			{
+				caretBack++;
+			}
+		}
+
+		if (endLineComment != null)
+		{
+			// if we're inserting a line comment into a non-empty
+			// line, we'll need to add a line break so we don't
+			// comment out existing code.
+			if (getLineLength(lineEnd) != caretEnd)
+			{
+				end += '\n';
+			}
+		}
+		else
+		{
+			// always insert a new line if there's no comment character.
+			end += "\n";
+		}
+
+		if(caretEnd == getLineStartOffset(lineEnd))
+			insert(caretEnd,end);
+		else
+		{
+			CharSequence lineText = getSegment(caretEnd - 1, 1);
+			if (Character.isWhitespace(lineText.charAt(0)))
+				insert(caretEnd, end);
+			else
+				insert(caretEnd,' ' + end);
+		}
+
+		insert(caretStart,start + whitespace);
+
+		return caretBack;
+	}
+	
 	//}}}
 
 	//{{{ Private members

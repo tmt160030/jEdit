@@ -41,9 +41,12 @@ import org.gjt.sp.util.SyntaxUtilities;
  */
 public class SearchBar extends JToolBar
 {
+	private SearchBarTimer searchBarTimer;
+
 	//{{{ SearchBar constructor
 	public SearchBar(final View view, boolean temp)
 	{
+		this.searchBarTimer = new SearchBarTimer(view);
 		this.view = view;
 
 		setLayout(new BoxLayout(this,BoxLayout.X_AXIS));
@@ -107,28 +110,6 @@ public class SearchBar extends JToolBar
 		wholeWord.setRequestFocusEnabled(false);
 		update();
 
-		//{{{ Create the timer used by incremental search
-		timer = new Timer(0,new ActionListener()
-		{
-			@Override
-			public void actionPerformed(ActionEvent evt)
-			{
-				if(!incrementalSearch(searchStart,searchReverse))
-				{
-					if(!incrementalSearch(
-						(searchReverse
-						? view.getBuffer().getLength()
-						: 0),searchReverse))
-					{
-						// not found at all.
-						view.getStatus().setMessageAndClear(
-							jEdit.getProperty(
-							"view.status.search-not-found"));
-					}
-				}
-			}
-		}); //}}}
-
 		// if 'temp' is true, hide search bar after user is done with it
 		this.isRemovable = temp;
 
@@ -179,7 +160,6 @@ public class SearchBar extends JToolBar
 	private final JCheckBox regexp;
 	private final JCheckBox hyperSearch;
 	private final JCheckBox wholeWord;
-	private final Timer timer;
 	private boolean wasError;
 	private final Color defaultBackground;
 	private final Color defaultForeground;
@@ -187,16 +167,15 @@ public class SearchBar extends JToolBar
 	private final Color errorBackground;
 	// close button only there if 'isRemovable' is true
 	private RolloverButton close;
+	
 
-	private int searchStart;
-	private boolean searchReverse;
 	private boolean isRemovable;
 	//}}}
 
 	//{{{ find() method
 	private void find(boolean reverse)
 	{
-		timer.stop();
+		searchBarTimer.getTimer().stop();
 
 		String text = find.getText();
 		//{{{ If nothing entered, show search and replace dialog box
@@ -265,7 +244,7 @@ public class SearchBar extends JToolBar
 	} //}}}
 
 	//{{{ incrementalSearch() method
-	private boolean incrementalSearch(int start, boolean reverse)
+	protected boolean incrementalSearch(int start, boolean reverse)
 	{
 		/* For example, if the current fileset is a directory,
 		 * C+g will find the next match within that fileset.
@@ -314,18 +293,6 @@ public class SearchBar extends JToolBar
 		return ret;
 	} //}}}
 
-	//{{{ timerIncrementalSearch() method
-	private void timerIncrementalSearch(int start, boolean reverse)
-	{
-		searchStart = start;
-		searchReverse = reverse;
-
-		timer.stop();
-		timer.setRepeats(false);
-		timer.setInitialDelay(150);
-		timer.start();
-	} //}}}
-	
 	//{{{ setCloseButtonVisibility() method
 	private void setCloseButtonVisibility()
 	{
@@ -409,7 +376,7 @@ public class SearchBar extends JToolBar
 				else
 					start = s.getStart();
 
-				timerIncrementalSearch(start,false);
+				searchBarTimer.timerIncrementalSearch(start,false);
 			}
 		} //}}}
 
@@ -432,7 +399,7 @@ public class SearchBar extends JToolBar
 						// reverse regexp search
 						// not supported yet, so
 						// 'simulate' with restart
-						timerIncrementalSearch(0,false);
+						searchBarTimer.timerIncrementalSearch(0,false);
 					}
 					else
 					{
@@ -444,7 +411,7 @@ public class SearchBar extends JToolBar
 							start = textArea.getCaretPosition();
 						else
 							start = s.getStart();
-						timerIncrementalSearch(start,true);
+						searchBarTimer.timerIncrementalSearch(start,true);
 					}
 				}
 			}
