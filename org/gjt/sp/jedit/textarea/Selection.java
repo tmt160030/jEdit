@@ -47,6 +47,18 @@ import org.gjt.sp.util.StandardUtilities;
  */
 public abstract class Selection implements Cloneable
 {
+	/**
+	 * Returns the text in the specified selection.
+	 * @param s The selection
+	 * @since jEdit 3.2pre1
+	 */
+	public String getSelectedText(JEditBuffer buffer)
+	{
+		StringBuilder buf = new StringBuilder(this.end - this.start);
+		this.getText(buffer,buf);
+		return buf.toString();
+	}
+	
 	//{{{ getStart() method
 	/**
 	 * Returns the start offset of this selection.

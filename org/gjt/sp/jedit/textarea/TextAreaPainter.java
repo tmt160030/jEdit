@@ -59,6 +59,8 @@ import org.gjt.sp.util.Log;
  */
 public class TextAreaPainter extends JComponent implements TabExpander
 {
+	private TextAreaPainterColor textAreaPainterColor = new TextAreaPainterColor();
+
 	//{{{ Layers
 	/**
 	 * The lowest possible layer.
@@ -300,7 +302,7 @@ public class TextAreaPainter extends JComponent implements TabExpander
 	 */
 	public final Color getSelectionColor()
 	{
-		return selectionColor;
+		return textAreaPainterColor.getSelectionColor();
 	} //}}}
 
 	//{{{ setSelectionColor() method
@@ -310,8 +312,17 @@ public class TextAreaPainter extends JComponent implements TabExpander
 	 */
 	public final void setSelectionColor(Color selectionColor)
 	{
-		this.selectionColor = selectionColor;
-		textArea.repaint();
+		textAreaPainterColor.setSelectionColor(selectionColor, this.textArea);
+	} //}}}
+	
+	/**
+	 * Sets the multiple selection color.
+	 * @param multipleSelectionColor The multiple selection color
+	 * @since jEdit 4.2pre1
+	 */
+	public final void setMultipleSelectionColor(Color multipleSelectionColor)
+	{
+		textAreaPainterColor.setMultipleSelectionColor(multipleSelectionColor, this.textArea);
 	} //}}}
 
 	//{{{ getMultipleSelectionColor() method
@@ -321,20 +332,10 @@ public class TextAreaPainter extends JComponent implements TabExpander
 	 */
 	public final Color getMultipleSelectionColor()
 	{
-		return multipleSelectionColor;
+		return textAreaPainterColor.getMultipleSelectionColor();
 	} //}}}
 
 	//{{{ setMultipleSelectionColor() method
-	/**
-	 * Sets the multiple selection color.
-	 * @param multipleSelectionColor The multiple selection color
-	 * @since jEdit 4.2pre1
-	 */
-	public final void setMultipleSelectionColor(Color multipleSelectionColor)
-	{
-		this.multipleSelectionColor = multipleSelectionColor;
-		textArea.repaint();
-	} //}}}
 
 	//{{{ getLineHighlightColor() method
 	/**
@@ -363,7 +364,7 @@ public class TextAreaPainter extends JComponent implements TabExpander
 	 */
 	public final boolean isLineHighlightEnabled()
 	{
-		return lineHighlight;
+		return textAreaPainterColor.getLineHighlight();
 	} //}}}
 
 	//{{{ setLineHighlightEnabled() method
@@ -374,8 +375,7 @@ public class TextAreaPainter extends JComponent implements TabExpander
 	 */
 	public final void setLineHighlightEnabled(boolean lineHighlight)
 	{
-		this.lineHighlight = lineHighlight;
-		textArea.repaint();
+		textAreaPainterColor.setLineHighlightEnabled(lineHighlight, this.textArea);
 	} //}}}
 
 	//{{{ getSelectionFgColor() method
@@ -963,8 +963,6 @@ public class TextAreaPainter extends JComponent implements TabExpander
 
 	SyntaxStyle[] styles;
 	Color caretColor;
-	Color selectionColor;
-	Color multipleSelectionColor;
 	Color lineHighlightColor;
 	Color structureHighlightColor;
 	Color eolMarkerColor;
@@ -975,7 +973,6 @@ public class TextAreaPainter extends JComponent implements TabExpander
 
 	boolean blockCaret;
 	boolean thickCaret;
-	boolean lineHighlight;
 	boolean structureHighlight;
 	boolean eolMarkers;
 	boolean wrapGuide;

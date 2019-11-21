@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="build/|de/|misc/|test/" kind="src" path=""/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk1.8.0_221/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/JScalley/Documents/ANT/apache-ant-1.9.14/lib/ant.jar"/>
+	<classpathentry kind="lib" path="D:/JScalley/Documents/GitHub/jEdit/lib/test/hamcrest-core.jar"/>
+	<classpathentry kind="lib" path="D:/JScalley/Documents/GitHub/jEdit/lib/test/jsr305.jar"/>
+	<classpathentry kind="lib" path="D:/JScalley/Documents/GitHub/jEdit/lib/test/junit-dep.jar"/>
+	<classpathentry kind="lib" path="D:/JScalley/Documents/GitHub/jEdit/lib/test/hamcrest-library.jar"/>
+	<classpathentry kind="output" path="build-eclipse"/>
+</classpath>
